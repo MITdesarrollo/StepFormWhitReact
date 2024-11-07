@@ -19,7 +19,7 @@ Asegúrate de tener instalado lo siguiente en tu máquina:
 
 1. Clona el repositorio en tu máquina local:
    ```bash
-   git clone https://github.com/tu-usuario/nombre-del-repositorio.git
+   git clone git@github.com:MITdesarrollo/PruebaTecnica-CustomerScoops.git
    cd nombre-del-repositorio
    ```
    
