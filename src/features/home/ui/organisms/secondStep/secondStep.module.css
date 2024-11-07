@@ -11,3 +11,9 @@
 .textBold{
     font-weight: bold;
 }
+
+@media (min-width: 992px){
+    .containerButtons{
+        transform: translateX(-46px);
+    }
+}

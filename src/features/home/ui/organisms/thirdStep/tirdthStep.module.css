@@ -12,3 +12,9 @@
     display: flex;
     align-items: center;
 }
+
+@media (min-width: 992px){
+    .containerButtons{
+        transform: translateX(-46px);
+    }
+}
