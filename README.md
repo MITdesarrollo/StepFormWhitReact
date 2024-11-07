@@ -1,6 +1,6 @@
 # 🛠️  Desafío en React 🛠️ 
 
-Este proyecto es una entrega para un desafío que implementa una estructura de aplicacion simple pero limpia y un sistema de diseño parala UI. A continuación, se presentan los detalles sobre la configuración y ejecución del proyecto.
+Este proyecto es una entrega para un desafío que implementa una estructura de aplicacion simple pero limpia y un sistema de diseño para la reutilizacion de componentes UI. A continuación, se presentan los detalles sobre la configuración y ejecución del proyecto.
 
 ## 🚀 Características
 
