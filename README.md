@@ -47,7 +47,7 @@ Para iniciar el proyecto, ejecuta el siguiente comando:
 ```bash
 pnpm dev
 ```
-Esto iniciará el servidor de desarrollo y podrás acceder a la aplicación en [http://localhost:3000](http://localhost:3000).
+Esto iniciará el servidor de desarrollo y podrás acceder a la aplicación en [http://localhost:5173](http://localhost:5173).
 
 ## 🤝 
 
