@@ -44,9 +44,7 @@ export const HomeTemplate: React.FC = () => {
     const isNextStepDisable = () => {
         return stepData[formStep] === "";
     }
-    const handleResetStepData = () => {
-        setStepData(INITIAL_STEP_DATA)
-    }
+
     const CurrentStep = mappedComponent[formStep];
 
     return (
@@ -61,7 +59,6 @@ export const HomeTemplate: React.FC = () => {
                     currentStep={formStep}
                     stepData={stepData}
                     isNextStepDisable={isNextStepDisable}
-                    handleResetStepData={handleResetStepData}
                 />
             </section>
         </main>

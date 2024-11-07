@@ -14,8 +14,7 @@
 .secondText{
     font-style: italic;
 }
-.button{
-    height: 100%;
+.link{
     border: none;
     display: flex;
     align-items: center;
@@ -28,22 +27,22 @@
     padding: 10px 16px;
     border-radius: 20px;
     cursor: pointer;
+    text-decoration: none;
+    height: 16px;
 }
-.button img {
+.link img {
     opacity: 0;
     transition: opacity 0.8s ease;
     visibility: hidden;
 }
 
-.button:hover img {
+.link:hover img {
     opacity: 1;
     visibility: visible;
 }
-.disable{
-    background-color: var(--bg-disable);
-}
+
 @media (min-width: 992px){
-    .button{
+    .link{
         width: 140px;
     }
 }
