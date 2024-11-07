@@ -1,12 +1,13 @@
 .containerBanner {
     height: 213px;
 }
-
+.backgroundFigure{
+    background: linear-gradient(283.73deg, #231331 -29.4%, #00CCBC 50.02%);
+}
 .figureBanner {
     height: 100%;
     display: flex;
     justify-content: end;
-    background: linear-gradient(283.73deg, #231331 -29.4%, #00CCBC 50.02%);
     border-radius: 200px 0 0 200px;
 }
 
@@ -107,6 +108,9 @@
     .containerBanner {
         height: 100%;
         width: 50%;
+    }
+    .backgroundTransparent{
+        background: transparent;
     }
     .logoBanner {
         display: none;

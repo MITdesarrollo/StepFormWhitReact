@@ -34,7 +34,7 @@ export const template = `
             </tr>
             <tr>
                 <td style="padding-top: 20px;">
-                    <a href="https://www.mariel-torres.website/" style="display: inline-block; font-weight: bold; background-color: #231331; border-radius: 20px; color: azure; border: none; width: 191px; height: 35px; text-align: center; line-height: 35px; font-size: 14px; text-decoration: none;">Ingresa Aquí</a>
+                    <a href="https://prueba-tecnica-customer-scoops-tawny.vercel.app/" style="display: inline-block; font-weight: bold; background-color: #231331; border-radius: 20px; color: azure; border: none; width: 191px; height: 35px; text-align: center; line-height: 35px; font-size: 14px; text-decoration: none;">Ingresa Aquí</a>
                 </td>
             </tr>
             <tr>
