@@ -45,7 +45,7 @@ Asegúrate de tener instalado lo siguiente en tu máquina:
 
 Para iniciar el proyecto, ejecuta el siguiente comando:
 ```bash
-pnpm run dev
+pnpm dev
 ```
 Esto iniciará el servidor de desarrollo y podrás acceder a la aplicación en [http://localhost:3000](http://localhost:3000).
 
