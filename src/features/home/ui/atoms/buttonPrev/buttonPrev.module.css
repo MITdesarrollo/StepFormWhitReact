@@ -3,3 +3,6 @@
     background: none;
     cursor: pointer;
 }
+.buttonPrev img{
+    max-width: 35px;
+}

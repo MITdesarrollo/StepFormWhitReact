@@ -11,7 +11,7 @@ import {
 } from "../organisms";
 import { Banner } from "../molecules/Banner.tsx";
 import { ProgressionBar } from "../atoms/progressionBar/ProgressionBar.tsx";
-import {LogoGift} from "../atoms/logoGif/LogoGif.tsx";
+import { LogoGift } from "../atoms/logoGif/LogoGif.tsx";
 
 const mappedComponent = {
     [FormStep.STEP_ONE]: FirstStepComponent,
@@ -21,18 +21,18 @@ const mappedComponent = {
     [FormStep.STEP_FIVE]: FifthStepComponent,
     [FormStep.STEP_SIX]: SixthStepComponent,
 };
-
+const INITIAL_STEP_DATA = {
+    [FormStep.STEP_ONE]: '',
+    [FormStep.STEP_TWO]: '',
+    [FormStep.STEP_THREE]: '',
+    [FormStep.STEP_FOUR]: '',
+    [FormStep.STEP_FIVE]: '',
+    [FormStep.STEP_SIX]: '',
+}
 
 export const HomeTemplate: React.FC = () => {
     const [formStep, setFormStep] = React.useState<FormStep>(FormStep.STEP_ONE);
-    const [stepData, setStepData] = React.useState<Record<FormStep, string>>({
-        [FormStep.STEP_ONE]: '',
-        [FormStep.STEP_TWO]: '',
-        [FormStep.STEP_THREE]: '',
-        [FormStep.STEP_FOUR]: '',
-        [FormStep.STEP_FIVE]: '',
-        [FormStep.STEP_SIX]: '',
-    });
+    const [stepData, setStepData] = React.useState<Record<FormStep, string>>(INITIAL_STEP_DATA);
 
     const handleStepData = (key: FormStep, data: string) => {
         setStepData((prevState) => ({ ...prevState, [key]: data }));
@@ -44,11 +44,13 @@ export const HomeTemplate: React.FC = () => {
     const isNextStepDisable = () => {
         return stepData[formStep] === "";
     }
-
+    const handleResetStepData = () => {
+        setStepData(INITIAL_STEP_DATA)
+    }
     const CurrentStep = mappedComponent[formStep];
 
     return (
-        <main className={styles.containerForm}>
+        <main className={`${styles.containerForm} ${formStep === FormStep.STEP_SIX && styles.gradientBackground}`}>
             <ProgressionBar formStep={formStep}/>
             <Banner formStep={formStep}/>
             <section className={styles.form}>
@@ -59,6 +61,7 @@ export const HomeTemplate: React.FC = () => {
                     currentStep={formStep}
                     stepData={stepData}
                     isNextStepDisable={isNextStepDisable}
+                    handleResetStepData={handleResetStepData}
                 />
             </section>
         </main>

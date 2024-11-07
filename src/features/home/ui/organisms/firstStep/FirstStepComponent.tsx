@@ -4,7 +4,7 @@ import { ButtonNext } from "../../atoms/buttonNext/ButtonNext.tsx";
 import styles from "./firstStep.module.css";
 import { StepContainer } from "../stepContainer/StepContainer.tsx";
 
-export const FirstStepComponent = ({ handleStepData, handleSetStep , isNextStepDisable }: FormComponentProps) => {
+export const FirstStepComponent = ({ handleStepData, handleSetStep , isNextStepDisable, stepData , currentStep}: FormComponentProps) => {
     return (
         <StepContainer>
             <div className={styles.containerText}>
@@ -17,13 +17,12 @@ export const FirstStepComponent = ({ handleStepData, handleSetStep , isNextStepD
                 placeholder={"Nombre"}
                 onChange={(e) => handleStepData(FormStep.STEP_ONE, e.target.value)}
                 type={firstStepInfo.type}
+                value={stepData[currentStep]}
             />
             <div className={styles.containerButton}>
                 <ButtonNext handleSetStep={() => handleSetStep(FormStep.STEP_TWO)} text={"Comenzar"}
                             isNextStepDisable={isNextStepDisable}/>
             </div>
         </StepContainer>
-
-
     );
 };

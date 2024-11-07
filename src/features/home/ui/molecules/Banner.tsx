@@ -8,9 +8,10 @@ interface Props{
     formStep: FormStep
 }
 export const Banner = ({ formStep }: Props) => {
+    const backgroundColor = (formStep === FormStep.STEP_SIX && window.innerWidth >= 992) ? styles.backgroundTransparent : styles.backgroundFigure;
     return (
         <section className={styles.containerBanner}>
-            <div className={styles.figureBanner}>
+            <div className={`${styles.figureBanner} ${backgroundColor}`} >
                 <LogoGift className={styles.logoBanner}/>
                 <div className={styles.containerPersonSteps}>
                     <p className={styles.stepsNumber}>
