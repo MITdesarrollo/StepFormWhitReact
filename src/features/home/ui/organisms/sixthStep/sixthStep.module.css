@@ -2,6 +2,7 @@
     padding-top: 1.5rem;
     display: flex;
     align-items: center;
+
 }
 .text{
     font-weight: normal;
@@ -29,16 +30,6 @@
     cursor: pointer;
     text-decoration: none;
     height: 16px;
-}
-.link img {
-    opacity: 0;
-    transition: opacity 0.8s ease;
-    visibility: hidden;
-}
-
-.link:hover img {
-    opacity: 1;
-    visibility: visible;
 }
 
 @media (min-width: 992px){
