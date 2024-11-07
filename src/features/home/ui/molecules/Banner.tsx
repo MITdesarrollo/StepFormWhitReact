@@ -1,6 +1,6 @@
 import styles from "./banner.module.css";
 import Line from "../../../../assets/line.png";
-import PersonBanner from "../../../../assets/persona-banner.svg";
+import PersonBanner from "../../../../assets/persona-banner.png";
 import { FormStep } from "../../interfaces/formStep.ts";
 import { LogoGift } from "../atoms/logoGif/LogoGif.tsx";
 
