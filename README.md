@@ -20,7 +20,7 @@ Asegúrate de tener instalado lo siguiente en tu máquina:
 1. Clona el repositorio en tu máquina local:
    ```bash
    git clone git@github.com:MITdesarrollo/PruebaTecnica-CustomerScoops.git
-   cd nombre-del-repositorio
+   cd PruebaTecnica-CustomerScoops
    ```
    
 2. Instala las dependencias del proyecto utilizando PNPM:
