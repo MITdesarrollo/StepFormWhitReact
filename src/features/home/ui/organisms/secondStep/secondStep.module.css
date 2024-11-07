@@ -1,0 +1,13 @@
+
+.containerButtons{
+    display: flex;
+    align-items: center;
+}
+.containerText{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.textBold{
+    font-weight: bold;
+}

@@ -1,0 +1,12 @@
+
+.containerButtons{
+    display: flex;
+    align-items: center;
+}
+
+.containerText{
+    padding-bottom: 1rem;
+}
+.containerText p{
+   margin: 0;
+}

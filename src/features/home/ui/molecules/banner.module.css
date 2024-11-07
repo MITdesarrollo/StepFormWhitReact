@@ -1,0 +1,142 @@
+.containerBanner {
+    height: 213px;
+}
+
+.figureBanner {
+    height: 100%;
+    display: flex;
+    justify-content: end;
+    background: linear-gradient(283.73deg, #231331 -29.4%, #00CCBC 50.02%);
+    border-radius: 200px 0 0 200px;
+}
+
+.containerPersonSteps {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: end;
+    margin-left: 1rem;
+}
+
+.stepsNumber {
+    margin: inherit;
+    padding-right: 1rem;
+    padding-bottom: 5px;
+    display: flex;
+    align-items: start;
+    font-family: "sf pro light", sans-serif;
+}
+
+.line {
+    padding: 0 5px;
+}
+
+.totalStep {
+    font-family: 'sf pro medium', sans-serif;
+    font-size: 10px;
+}
+
+@keyframes slideInScaleUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px) scale(0.5);
+    }
+    60% {
+        opacity: 1;
+        transform: translateY(0) scale(1.1);
+    }
+    100% {
+        transform: translateY(0) scale(1);
+    }
+}
+
+.currentStep {
+    font-size: 21px;
+    font-family: 'sf pro medium', sans-serif;
+    animation: slideInScaleUp 0.6s ease-out;
+}
+
+
+.logoBanner {
+    height: 70px;
+    width: auto;
+    margin: auto;
+}
+
+.logoBannerDesk {
+    display: none;
+}
+
+.imageBanner {
+    margin-right: 2rem;
+    height: 80%;
+    object-fit: cover;
+    width: auto;
+}
+
+/* Media Queries */
+@media (min-width: 400px) {
+    .containerBanner {
+        height: 250px;
+    }
+    .logoBanner {
+        top: 20%;
+        height: 100px;
+    }
+}
+
+@media (min-width: 600px) {
+    .containerBanner {
+        height: 300px;
+    }
+    .imageBanner {
+        margin-right: 3rem;
+    }
+}
+
+@media (min-width: 768px) {
+    .containerBanner {
+        height: 350px;
+    }
+    .logoBanner {
+        height: 150px;
+    }
+}
+
+@media (min-width: 992px) {
+    .containerBanner {
+        height: 100%;
+        width: 50%;
+    }
+    .logoBanner {
+        display: none;
+    }
+    .logoBannerDesk {
+        display: flex;
+        height: 41px;
+        width: auto;
+    }
+    .imageBanner {
+        height: auto;
+        max-height: 410px;
+        margin-right: 3rem;
+    }
+}
+
+@media (min-width: 1280px) {
+    .imageBanner {
+        max-height: 567px;
+    }
+}
+
+@media (min-width: 1440px) {
+    .imageBanner {
+        max-height: 620px;
+    }
+}
+
+@media (min-width: 1770px) {
+    .imageBanner {
+        max-height: 750px;
+    }
+}

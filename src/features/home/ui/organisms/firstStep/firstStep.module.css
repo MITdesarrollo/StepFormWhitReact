@@ -1,0 +1,23 @@
+
+.inputText{
+  border: none;
+  border-bottom: 1px solid var(--main-color);
+  height: 30px;
+  width: 100%;
+  outline: none;
+  background: transparent;
+  margin-bottom: 1.5rem;
+}
+.inputText::placeholder {
+  color: #23133180;
+  font-size: 16px;
+  font-family: 'sf pro ligth', sans-serif;
+}
+.containerText{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.textBold{
+  font-weight: bold;
+}

@@ -1,0 +1,64 @@
+.buttonGroupContainer {
+  display: grid;
+    gap: .2rem;
+}
+
+.optionButton {
+    min-height: 39px;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    padding: 5px;
+    border: 1px solid var(--main-color);
+    border-radius: 20px;
+    background: none;
+    cursor: pointer;
+    font-family: "sf pro medium", sans-serif;
+    font-size: 11px;
+    width: 100%;
+    text-align: center;
+}
+
+.letterButton {
+    background: #00CCBC;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    width: 50px;
+    height: 30px;
+    border-radius: 15px;
+    font-family: "sf pro medium", sans-serif;
+    text-align: center;
+}
+
+.selected {
+    background-color: var(--main-color);
+    color: white;
+}
+
+.text {
+    padding: 0 .3em;
+}
+
+@media (min-width: 992px) {
+    .buttonGroupContainer {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .buttonGroupContainer .optionButton:last-child:nth-child(odd) {
+        grid-column: span 1;
+    }
+
+    .optionButton{
+        gap: 10px;
+    }
+
+    .letterButton {
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        padding: 0;
+    }
+}
+
