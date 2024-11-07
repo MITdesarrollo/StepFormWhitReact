@@ -41,12 +41,6 @@ Asegúrate de tener instalado lo siguiente en tu máquina:
    pnpm install
    ```
 
-3. Configura tu API Key de RESEND:
-   - Crea un archivo `.env` en la raíz del proyecto y agrega tu API Key de la siguiente manera:
-     ```makefile
-     RESEND_API_KEY=tu_api_key_aqui
-     ```
-
 ## 🏁 Ejecución del Proyecto
 
 Para iniciar el proyecto, ejecuta el siguiente comando:
