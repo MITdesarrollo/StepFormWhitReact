@@ -4,7 +4,7 @@ import { ButtonNext } from "../../atoms/buttonNext/ButtonNext.tsx";
 import styles from "./firstStep.module.css";
 import { StepContainer } from "../stepContainer/StepContainer.tsx";
 
-export const FirstStepComponent = ({ handleStepData, handleSetStep , isNextStepDisable, stepData , currentStep}: FormComponentProps) => {
+export const FirstStepComponent = ({ handleStepData, handleSetStep , isNextStepDisable, stepData , currentStep }: FormComponentProps) => {
     return (
         <StepContainer>
             <div className={styles.containerText}>

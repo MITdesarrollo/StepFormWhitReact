@@ -3,13 +3,13 @@ import Line from "../../../../assets/line.png";
 import PersonBanner from "../../../../assets/persona-banner.png";
 import { FormStep } from "../../interfaces/formStep.ts";
 import { LogoGift } from "../atoms/logoGif/LogoGif.tsx";
-import {useResize} from "../../hooks/useResize.ts";
+import { useResize } from "../../hooks/useResize.ts";
 
 interface Props{
     formStep: FormStep
 }
 export const Banner = ({ formStep }: Props) => {
-    const {width } = useResize();
+    const { width } = useResize();
     const backgroundColor = (formStep === FormStep.STEP_SIX && width >= 992) ? styles.backgroundTransparent : styles.backgroundFigure;
 
     return (
