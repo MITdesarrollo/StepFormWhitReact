@@ -23,7 +23,7 @@ Este proyecto es una entrega para un desafío que implementa una estructura de a
 
 Asegúrate de tener instalado lo siguiente en tu máquina:
 
-- [Node.js](https://nodejs.org/) (versión 14 o superior)
+- [Node.js](https://nodejs.org/) (versión 16 o superior)
 - [PNPM](https://pnpm.io/)
 
 ## 🔧 Instalación
