@@ -1,3 +1,5 @@
+![banner customerScope](https://res.cloudinary.com/dets0trss/image/upload/v1730934720/banner-email_iinfpa.png)
+
 # 🛠️  Desafío en React 🛠️ 
 
 Este proyecto es una entrega para un desafío que implementa una estructura de aplicacion simple pero limpia y un sistema de diseño para la reutilizacion de componentes UI. A continuación, se presentan los detalles sobre la configuración y ejecución del proyecto.
